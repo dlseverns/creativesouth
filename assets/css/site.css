@@ -10,12 +10,40 @@
 /* ===== Body, Images and Typography ===== */
 
 body {
-	background-color: #1e1e1e;
+	background-image: radial-gradient(ellipse farthest-corner at left top, #365454 0%, #4DAF7C 100%);
 	font-family: Arial, Helvetica, sans-serif;
 	font-size: 14px;
 	font-weight: normal;
 	color: #7e7e7e;
 	line-height: 20px;
+}
+.window-border {
+    position: fixed;
+    background-color:#ffffff;
+    z-index: 9999;
+}
+.left-window-border {
+    left: 0px; top: 0px;
+    width: 25px;
+    height: 100%;
+}
+.top-window-border {
+    left: 0px; top: 0px;
+    height: 25px;
+    width: 100%;
+}
+.bottom-window-border {
+    left: 0px; bottom: 0px;
+    height: 25px;
+    width: 100%;
+}
+.right-window-border {
+    right: 0px; top: 0px;
+    height: 100%;
+    width: 25px;
+}
+.body-shadow {
+    
 }
 
 .clearfix {
@@ -53,6 +81,17 @@ blockquote {
 
 /* ===== End ===== */
 
+/* ===== Top Nav ===== */
+header.top-nav {
+    height: 85px;
+    width: 100%;
+    margin-top: 0px;
+    position: relative;
+        background-color: #317c78;
+        border-bottom: 5px solid #469490;
+    z-index: 99;
+    
+}
 
 /* ===== Main Menu ===== */
 
@@ -60,20 +99,21 @@ blockquote {
 	width: 240px;
 	height: 100%;
 	position: fixed;
-	margin-top: -40px;
-	background-color: #ecf0f1;
+	margin: -90px 0px 0px 0px;
+	background-color: rgba(255, 255, 255, .2);
 	box-shadow: 3px 0px 3px #000000;
 	z-index: 100;
 }
 
 .logo {
 	width: 100%;
-	height: auto;
+	height: 75px;
 	text-align: center;
-	padding: 40px 0px 38px 0px;
-	background-color: #34495e;
-	border-bottom: #00e0e0 solid 5px;
+	padding: 5px 0px 5px;
+	background-color: #317c78;
+        border-bottom: 5px solid #469490;
 }
+
 
 
 /* ===== Nav Menu ===== */
@@ -102,10 +142,10 @@ blockquote {
 
 .main-menu ul {
 	font-family: 'Roboto', sans-serif;
-	font-weight: 700;
-	font-size: 18px;
+	font-size: 14px;
+        font-weight: 200;
 	line-height: 20px;
-	text-align: right;
+	text-align: left;
 	list-style: none;
 }
 
@@ -113,7 +153,8 @@ blockquote {
 	padding: 10px 20px;
 	position: relative;
 	background-color: transparent;
-
+        border-bottom: 1px solid rgba(255,255,255, 0.1);
+        
 	-webkit-transition: background-color 0.3s ease-in-out;
 	-moz-transition: background-color 0.3s ease-in-out;
 	-ms-transition: background-color 0.3s ease-in-out;
